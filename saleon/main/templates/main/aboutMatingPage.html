@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <title>Hello, world!</title>
+  </head>
+  <body style="background: #4a4948; color: #FFFFFF !important;">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <h1 class="navbar-brand" style="font-size: 2em;"><a href="{% url 'home' %}" style="text-decoration: none; color: #ffffff">CouponOn!</a></h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarRespons">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarRespons">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="{% url 'home' %}" class="nav-link">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a href="{% url 'about' %}" class="nav-link">О нас</a>
+            </li>
+            <li class="nav-item active">
+              <a href="{% url 'mate' %}" class="nav-link active">Партнёрам</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+  <div class="container">
+      <br>
+      <h4 style="text-align:center">Мы отрыты для сотрудничесва</h4>
+      <h5 style="text-align:center">Если Вы хотите, чтобы выше предприятие было у нас на сайте, а также по любым комерчиским предложениям пишите нам на почту <b>info@saleon.ru</b></h5>
+      <h5 style="text-align:center">В письме нужно указать название заведения, адресс, метро, ссылку на ваш сайт или соцсеть, размер скидки и её время действия, начтная с момента добавления в сервис, тип заведения и прикрепить его фото</h5>
+      <br>
+  </div>
+  </body>
+</html>
